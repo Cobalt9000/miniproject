@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+        color: #fff;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h1{
+        color: #fff;
+        margin-bottom: 60px;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    .container h1:hover{
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+    }
+    iframe{
+        width: 80%;
+        height: 500px;
+        filter: invert(100%);
+    }
+</style>
+<body bgcolor="black">
+    <div class="container">
+        <h1> DSI MAPS </h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9776449181595!2d77.56436641476995!3d12.909158290896853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagara%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1659715330690!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+</body>
+</html>
