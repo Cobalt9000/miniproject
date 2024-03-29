@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Map view</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <style>
     *{
@@ -35,6 +36,10 @@
     iframe{
         width: 80%;
         height: 500px;
+    }
+    iframe1{
+        width: 80%;
+        height: 500px;
         filter: invert(100%);
     }
 </style>
@@ -46,6 +51,47 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <div id="map"></div>
+    <div id="pano"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8QFeST9xVUfh21vSJP8z-zcvBe2Mawcg&callback=initialize&v=weekly&solution_channel=GMP_CCS_streetview_v1"defer>
+    </script>
+    <div class="container">
+        <h1> Entrance of the college </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711696820555!6m8!1m7!1sCAoSLEFGMVFpcE9RbG1OTC1PX19qNXQyd3BJX2VfUWxIV29oQkxweUtIQU5BTmpJ!2m2!1d12.9085024596802!2d77.56624289663!3f189.66!4f6.769999999999996!5f0.5970117501821992" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <h1> Library Entrance </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711696047815!6m8!1m7!1sCAoSLEFGMVFpcFBuTl93dVBkTHNJSEFpMW1zZ2ZDVm41bVlhNU1QazI5cmlnV2Nj!2m2!1d12.90851526486112!2d77.56623563800076!3f175.42649845506452!4f-23.118686141727324!5f0.5970117501821992" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <h1> Library (reference-section) </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711697233773!6m8!1m7!1sCAoSLEFGMVFpcE1BX0Zwd0FjbXZ4ajZoTHpHSFBZVkFPRC1sYnlOWWNPX2EwM29z!2m2!1d12.90840228824117!2d77.56633960971521!3f223.37469425284505!4f-12.464101303710478!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <h1> Mechanincal Department </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711695735026!6m8!1m7!1sCAoSLEFGMVFpcE5tdlNsTEdNTDdQRDU0dHVZTkJ2NDRpd29Ycm9GdUZvRlZxNERF!2m2!1d12.9085244!2d77.5662996!3f168.04301048682564!4f-3.568083719950252!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <h1> Amphitheatre </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711695794936!6m8!1m7!1sCAoSLEFGMVFpcE1BQ19xanNvN0NxZ0xRaFFmTUlIZTJyZzNjSnJFV0RDLXBUYVhf!2m2!1d12.90847686743353!2d77.5662717185536!3f236.0368932017653!4f-8.248923186689453!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <h1> Amphitheatre </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711695857424!6m8!1m7!1sCAoSLEFGMVFpcE5DZVc4d0JzZ2VFZkpGZmFCYU5wb2laVGszQ3BlM0JjdDhRaW9S!2m2!1d12.90846368255009!2d77.56625658325254!3f316.32751110784625!4f-6.59013279579699!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <h1> P.C Sagar Auditorium </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711696618939!6m8!1m7!1sCAoSLEFGMVFpcE9saHJwVVl5MHpfT01CQ0F5WDVVdUg5MHlRTzdvWGhzOVNxdllP!2m2!1d12.90850143530387!2d77.5662432350565!3f185.30072299327398!4f-1.9535316463642545!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <h1> Playground </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711696771379!6m8!1m7!1sCAoSLEFGMVFpcE1zd0lZbjhPYnJ4Wk80LUttTzdXdXFfbE50SjVQNThaRUZvTllf!2m2!1d12.90850353730037!2d77.56623919571689!3f133.95324287043624!4f-15.209469335169487!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+
     
 </body>
 </html>
+
