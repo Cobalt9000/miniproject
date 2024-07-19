@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/b53fbd1973.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/dsce_logo-removebg-preview.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="INDEX.HTML">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Our Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>DSI Mapping Project</span></p>
+                <h1>Hi, We are Team <span>Complexity with AI</span></h1>
+            </div>
+
+        </div>
+    </div>
+<!-- --------------about---------------- -->   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AI.png" alt="AI">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Us</h1>
+                    <p>We the students of DSCE are making this website for 
+                        the help of students and the vistors of the campus to find 
+                        the places where they need to go.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('TEAM MEMBERS')">TEAM MEMBERS</p>
+                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('Skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="TEAM MEMBERS">
+                        <ul>
+                            <li><span><a href="E-22-Suprith.html">Suprith.A.S</a></span></li>
+                            <li><span><a href="">Ashwin Sai G</a></span></li>
+                            <li><span><a href="">Phanindra Babu</a></span></li>
+                            <li><span><a href="">Hari Krishna</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Studying in DAYANADA SAGAR COLLEGE OF ENGINEERING.</span></li>
+                            <li><span>BE in Artificial inteligence and Machine learning</span></li>
+                            <li><span>1st year</span> <br> 2nd semester </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>Web development</span>learning html,css,bootstrap</li>
+                            <li><span>App development</span>Building Android/IOS apps</li>
+                            <li><span>Game development</span> learning <br>Unreal engine (both the blue-prints and c++) <br>learning Unity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2>Quick Map</h2>
+                    <p>
+                        it is a small map for the college designed for the people
+                        to use it.
+                    </p>
+                    <a href="maps.html">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bell"></i>
+                    <h2>Event Notification</h2>
+                    <p>will notify you when there are events going on in the campus</p>
+                    <a href="#">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Share Live location</h2>
+                    <p>
+                        helps you to share your lice location to your friends or desired person.
+                    </p>
+                    <a href="#">Learn More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------- Our Work --------- -->
+    <div id="work">
+        <div class="container">
+            <h1 class="subtitle">Our Work</h1>
+            <div class="work-list">
+                <div class="work1">
+                    <img src="images/website.jpg" alt="website">
+                    <div class="layer">
+                        <h3>Website</h3>
+                        <p>
+                            This is the heart of the dsi mapping system which connects 
+                            all the components of the project and helps in the functioning
+                            of this project.
+                        </p>
+                        <a href="INDEX.HTML"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work1">
+                    <img src="images/app.webp" alt="App">
+                    <div class="layer">
+                        <h3>APP</h3>
+                        <p>
+                            This part of the project helps in connecting the users through mobile application
+                            where the users can download the app through the website link and have access to 
+                            some exclusive features that are provided in the app.
+                        </p>
+                        <a href="coming soon.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work1">
+                    <img src="images/unreal.jpg" alt="Computer software">
+                    <div class="layer">
+                        <h3>Computer Application (Virtual Campus)</h3>
+                        <p>
+                            This will be a computer software/application that will help the users to interact and use 
+                            the application to roam around and explore the campus virtually.
+                        </p>
+                        <a href="coming soon.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="coming soon.html" class="btn">SEE MORE</a>
+        </div>
+    </div>
+    <!-- ---------------------contact------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelopes-bulk"></i> Dsimapper@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> +916360943397</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Coblt121"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                        <a href="https://open.spotify.com/user/31hego4dchnj4p7hjrdkxkycyz4a"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="https://github.com/Cobalt9000"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://in.linkedin.com/in/suprith-shettigar-81b9a1229"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message To Our Team."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> <i class="fa-brands fa-galactic-senate"></i> Copyright © Suprith Shettigar. Made by the Team Complexity With AI. <i class="fa-brands fa-galactic-senate"></i> </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxrAsKhxlO98KJmiiPTSUlmNvOG5P6UJJhcUj9FaW4IPCAB33-9TFr_AWqCzP_RgFYe/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = " Message Sent Successfully :) "
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>

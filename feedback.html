@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b53fbd1973.js" crossorigin="anonymous"></script>
+    <title>Feedback</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins',sans-serif;
+        box-sizing: border-box;
+    }
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/fb.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        width: 90%;
+        max-width: 600px;
+    }
+    .input-group{
+        margin-bottom: 30px;
+        position: relative;
+    }
+    input, textarea{
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        font-size: 15px;
+    }
+    label{
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        color: #fff;
+        cursor: text;
+        transition: 0.2s;
+    }
+    button{
+        padding: 10px 0;
+        color: #fff;
+        outline: none;
+        background: transparent;
+        border: 1px solid #fff;
+        width: 100%;
+        cursor: pointer;
+    }
+    .button{
+        padding: 10px 0;
+        color: #fff;
+        outline: none;
+        background: transparent;
+        border: 1px solid #fff;
+        width: 100%;
+        cursor: pointer;
+    }
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label{
+        top: -35px;
+        font-size: 14px;
+
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .row .input-group{
+        flex-basis: 48%;
+    }
+    #msg{
+    padding: 100px;
+    color: #61b752;
+    margin-top: -30px;
+    display: block;
+    }
+</style>
+<body>
+    
+    <div class="hero">
+        <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+        <form action="https://formsubmit.co/dsimaps01@gmail.com" method="POST" onsubmit="sendEmail(); reset();">
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" name="Name" placeholder="" required>
+                    <label for="name"><i class="fa-regular fa-user"></i>  Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" name="Phone number" placeholder="number" required>
+                    <label for="number"><i class="fa-solid fa-mobile-screen-button"></i>  Phone number</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" name="Email" placeholder="" required>
+                <label for="email"><i class="fa-solid fa-envelope"></i>  Email ID</label>
+            </div>
+            <div class="input-group">
+                <textarea name="message" id="message" rows="8" placeholder="" required></textarea>
+                <label for="message"><i class="fa-sharp fa-solid fa-file-lines"></i>  Your Message</label>
+            </div>
+            <div class="input-group">
+                <input type="file" id="file" name="file attached" placeholder="">
+                <label for="file"><i class="fa-solid fa-paperclip"></i>  file attachemt</label>
+            </div>
+            <button type="submit">SUBMIT  <i class="fa-solid fa-paper-plane"></i></button>
+            <div>
+                <button><a href="https://formsubmit.co/el/nedate"> Method 2 </a></button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: "c349010d-3d96-493a-8699-50079f09e50f",
+                Host : "smtp.elasticemail.com",
+                Username : "dsimaps01@gmail.com",
+                Password : "C9435EBFBAB0136122F8DF7CEB559D258F77.12",
+                To : "dsimaps01@gmail.com",
+                From : document.getElementById("email").value,
+                Subject : "Feedback and personal info of the user",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone no: " + document.getElementById("number").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert(" Message has been successfully sent to the Email. ")
+            );
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxVT4Yg6pE3ByCdiBa3UoC54v1RXWukpYhgpFFDzBuWBDfTcFBtOiems0ha3H2CoxYAeQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = " Message Sent Successfully :) "
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
